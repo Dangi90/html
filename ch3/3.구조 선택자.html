@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3. css 구조선택자</title>
+    
+    <style>
+        /* 구조선택자 */
+        #city > li:first-child{color : red;}
+        #city > li:nth-child(2){color: blue}
+        #city > li:nth-child(3){color: rgb(241, 238, 6)}
+        #city > em:nth-child(6){color: violet;}
+        #city > em:nth-of-type(2){color: brown;}
+        #city > em:last-child{color: rgb(6, 235, 25);}
+
+     
+        #country > li:first-child{color : red;}
+       
+        #country > li:nth-child(2){color: yellow;}
+        
+        ul:nth-child(3) > li:nth-child(4){color: aqua;}
+      
+    </style>
+    
+
+</head>
+<body>
+    <h3>3.css 구조선택자</h3>
+    
+    <ul id="city">
+
+        <li>서울</li>
+        <li>대전</li>
+        <li>대구</li>
+        <li>부산</li>
+        <li>광주</li>
+        <em>인천</em>
+        <em>울산</em>
+        <em>세종</em>
+        
+    </ul>
+
+    <ul id = "country">
+        <li>한국</li>
+        <li>미국</li>
+        <li>일본</li>
+        <li>중국</li>
+        <li>호주</li>
+        
+    </ul>
+</body>
+</html>
